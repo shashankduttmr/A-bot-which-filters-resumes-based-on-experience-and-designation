@@ -3,9 +3,12 @@ const Botkit = require('botkit');
 
 // dummy dataset
 const resumes = [
-  { name: "John Doe", experience: "5 years in software development" },
-  { name: "Jane Smith", experience: "3 years in project management" },
-  { name: "Bob Johnson", experience: "10 years in sales" }
+  { name: "Comes from dataset", experience: "software development", skills:["Java", "Spring", "MySQL"] },
+  { name: "Comes from dataset", experience: "software development", skills:["Python", "Node"]},
+  { name: "Comes from dataset", experience: "software development", skills:["", "", ""] },
+  { name: "Comes from dataset", experience: "software development" , skills:["", "", ""]},
+  { name: "Comes from dataset", experience: "software development", skills:["", "", ""] },
+  { name: "Comes from dataset", experience: "software development", skills:["", "", ""] },
 ];
 
 const filteredResumes = resumes.filter((resume) => resume.experience.includes("software development"));
