@@ -1,0 +1,24 @@
+{
+    "candidates":[
+        {
+            "name":"Jonny",
+            "qualification":"Graduate",
+            "applied_for":"SDE"
+        }, 
+        {
+            "name":"Change",
+            "qualification":"Graduate",
+            "applied_for":"Sales"
+        },
+        {
+            "name":"John DOE",
+            "qualification":"",
+            "applied_for":"SDE Intern"
+        },
+        {
+            "name":"David",
+            "qualification":"Graduate",
+            "applied_for":"SDE"
+        }
+    ]
+}

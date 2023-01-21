@@ -2,20 +2,14 @@ const Botkit = require('botkit');
 
 
 // dummy dataset
-const resumes = [
-  { name: "Comes from dataset", experience: "software development", skills:["Java", "Spring", "MySQL"] },
-  { name: "Comes from dataset", experience: "software development", skills:["Python", "Node"]},
-  { name: "Comes from dataset", experience: "software development", skills:["", "", ""] },
-  { name: "Comes from dataset", experience: "software development" , skills:["", "", ""]},
-  { name: "Comes from dataset", experience: "software development", skills:["", "", ""] },
-  { name: "Comes from dataset", experience: "software development", skills:["", "", ""] },
-];
+const {candidates} = require('./dataset.json')
 
-const filteredResumes = resumes.filter((resume) => resume.experience.includes("software development"));
+const filteredResumes = candidates.filter(people => people.applied_for === 'SDE' && people.qualification === "Graduate")
 
 const controller = Botkit.slackbot({
   debug: false
 });
+
 
 
 controller.spawn({
